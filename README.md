@@ -3,7 +3,7 @@
 # 🏔️ Alpine - supervisor
 ![size](https://img.shields.io/docker/image-size/11notes/supervisor/stable?color=0eb305) ![version](https://img.shields.io/docker/v/11notes/supervisor/stable?color=eb7a09) ![pulls](https://img.shields.io/docker/pulls/11notes/supervisor?color=2b75d6) ![stars](https://img.shields.io/docker/stars/11notes/supervisor?color=e6a50e) [<img src="https://img.shields.io/badge/github-11notes-blue?logo=github">](https://github.com/11notes)
 
-**Run multiple processes in Alpine*
+**Run multiple processes in Alpine**
 
 # SYNOPSIS
 What can I do with this? It’s meant to be a base image if you really need to run multiple services in a single image and want to use supervisord.
