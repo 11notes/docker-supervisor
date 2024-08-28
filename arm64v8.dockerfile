@@ -1,6 +1,6 @@
 # :: Base
   FROM --platform=linux/arm64 11notes/alpine:stable
-  ENV APP_NAME=supervisor
+  ENV APP_NAME="supervisor"
   ENV APP_ROOT=/supervisor
 
   USER root

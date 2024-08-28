@@ -11,11 +11,6 @@ What can I do with this? It’s meant to be a base image if you really need to r
 # VOLUMES
 * **/supervisor/etc** - Directory of configuration files for services
 
-# COMPOSE
-```yaml
-file ../docker-supervisor/compose.yaml not found!
-```
-
 # DEFAULT SETTINGS
 | Parameter | Value | Description |
 | --- | --- | --- |
