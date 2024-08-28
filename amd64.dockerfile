@@ -1,5 +1,15 @@
-# :: Base
+# :: Util
+  FROM alpine as util
+
+  RUN set -ex; \
+    apk add --no-cache \
+      git; \
+    git clone https://github.com/11notes/util.git;
+
+
+# :: Header
   FROM 11notes/alpine:stable
+  COPY --from=util /util/linux/shell/elevenLogJSON /usr/local/bin
   ENV APP_NAME="supervisor"
   ENV APP_ROOT=/supervisor
 
@@ -30,5 +40,4 @@
 
 # :: Start
 	USER docker
-	ENTRYPOINT ["/usr/bin/supervisord"]
-  CMD ["-c /etc/supervisord/default.conf"]
+  ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
